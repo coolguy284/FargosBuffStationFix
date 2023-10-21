@@ -1,0 +1,2 @@
+clean up braces and add newline at end of files
+remove some commented out stuff, but also add config option for enabling and disabling
