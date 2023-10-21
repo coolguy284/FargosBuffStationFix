@@ -58,7 +58,8 @@ namespace Fargowiltas.Items
                             || item.type == ItemID.AmmoBox
                             || item.type == ItemID.CrystalBall
                             || item.type == ItemID.BewitchingTable
-                            || item.type == ItemID.SliceOfCake)
+                            || item.type == ItemID.SliceOfCake
+                            || item.type == ItemID.WarTable)
                     {
                         line = new TooltipLine(Mod, "TooltipUnlim", "[i:87] [c/AAAAAA:Unlimited buff at 3 stack in inventory, Piggy Bank, or Safe]");
                         tooltips.Add(line);
@@ -89,6 +90,8 @@ namespace Fargowiltas.Items
                     player.AddBuff(BuffID.Bewitched, 2);
                 else if (item.type == ItemID.SliceOfCake)
                     player.AddBuff(BuffID.SugarRush, 2);
+                else if (item.type == ItemID.WarTable)
+                    player.AddBuff(BuffID.WarTable, 2);
             }
         }
     }
