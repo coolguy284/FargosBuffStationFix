@@ -29,8 +29,6 @@ namespace Fargowiltas.Items
 
         //MIGHTNEEDED-TooltipLine FountainTooltip(string biome) => new TooltipLine(Mod, "Tooltip0", $"[i:909] [c/AAAAAA:Forces surrounding biome state to {biome} upon activation]");
         
-        static int[] Informational = { ItemID.DPSMeter, ItemID.CopperWatch, ItemID.TinWatch, ItemID.TungstenWatch, ItemID.SilverWatch, ItemID.GoldWatch, ItemID.PlatinumWatch, ItemID.DepthMeter, ItemID.Compass, ItemID.Radar, ItemID.LifeformAnalyzer, ItemID.TallyCounter, ItemID.MetalDetector, ItemID.Stopwatch, ItemID.Ruler, ItemID.FishermansGuide, ItemID.Sextant, ItemID.WeatherRadio, ItemID.GPS, ItemID.REK, ItemID.GoblinTech, ItemID.FishFinder, ItemID.PDA, ItemID.CellPhone };
-        static int[] Construction = { ItemID.Toolbelt, ItemID.Toolbox, ItemID.ExtendoGrip, ItemID.PaintSprayer, ItemID.BrickLayer, ItemID.PortableCementMixer, ItemID.ActuationAccessory, ItemID.ArchitectGizmoPack };
         /*MIGHTNEEDED-public static void TryPiggyBankAcc(Item item, Player player)
         {
             if (item.IsAir || item.maxStack > 1 || !GetInstance<FargoServerConfig>().PiggyBankAcc)
@@ -63,15 +61,6 @@ namespace Fargowiltas.Items
                             || item.type == ItemID.SliceOfCake)
                     {
                         line = new TooltipLine(Mod, "TooltipUnlim", "[i:87] [c/AAAAAA:Unlimited buff at 3 stack in inventory, Piggy Bank, or Safe]");
-                        tooltips.Add(line);
-                    }
-                }
-
-                if (true /* && fargoServerConfig.PiggyBankAcc*/)
-                {
-                    if (Informational.Contains(item.type) || Construction.Contains(item.type))
-                    {
-                        line = new TooltipLine(Mod, "TooltipUnlim", "[i:87] [c/AAAAAA:Works from Piggy Bank and Safe]");
                         tooltips.Add(line);
                     }
                 }
