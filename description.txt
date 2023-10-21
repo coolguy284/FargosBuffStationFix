@@ -1,0 +1,3 @@
+In more recent versions of Fargo's Mutant Mod, the unlimited buff effects when you have three of a station in your inventory / piggy bank / safe was removed (like crystal balls, sharpening stations, cakes, etc.).
+
+This mod adds them back, for players that liked having unlimited buffs without clicking a station.
