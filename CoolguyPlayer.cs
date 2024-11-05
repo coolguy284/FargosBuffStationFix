@@ -20,17 +20,17 @@ using System.IO;
 ////using Fargowiltas.Toggler;
 
 namespace Fargowiltas {
-    public class CoolguyPlayer : ModPlayer {
-        public override void PostUpdateBuffs() {
-            if (true /*GetInstance<FargoServerConfig>().UnlimitedPotionBuffsOn120*/) {
-                foreach (Item item in Player.bank.item) {
-                    CoolguyGlobalItem.TryUnlimBuff(item, Player);
-                }
-
-                foreach (Item item in Player.bank2.item) {
-                    CoolguyGlobalItem.TryUnlimBuff(item, Player);
-                }
-            }
+  public class CoolguyPlayer : ModPlayer {
+    public override void PostUpdateBuffs() {
+      if (true /*GetInstance<FargoServerConfig>().UnlimitedPotionBuffsOn120*/) {
+        foreach (Item item in Player.bank.item) {
+          CoolguyGlobalItem.TryUnlimBuff(item, Player);
         }
+
+        foreach (Item item in Player.bank2.item) {
+          CoolguyGlobalItem.TryUnlimBuff(item, Player);
+        }
+      }
     }
+  }
 }
